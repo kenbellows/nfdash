@@ -1,10 +1,10 @@
 module.exports = function(grunt) {
+  var ui_src = ['ui/src/**/*.js'],
+      server_src = ['server/src/**/*.js'];
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    ui_src: ['ui/src/**/*.js'],
-    server_src: ['server/src/**/*.js'],
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       debug: {
         options : {
           beautify: true
-        }
+        },
         files: {
            'debug/<%= pkg.name %>.js': ui_src,
            'debug/<%= pkg.name %>-server.js': server_src
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         reporter: require('jshint-stylish'),
         all: ['Gruntfile.js', 'ui/src/**/*.js', 'server/src/**/*.js']
       }
-    },
+    }
   });
 
   // Load the plugin that provides the "uglify" task.
