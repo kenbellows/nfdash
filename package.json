@@ -1,0 +1,27 @@
+{
+  "name": "nerdfitness-dashboard",
+  "version": "0.0.1-a",
+  "description": "A dashboard concept to keep track of NerdFitness challenge progress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenbellows/nfdash.git"
+  },
+  "author": "Ken Bellows",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenbellows/nfdash/issues"
+  },
+  "homepage": "https://github.com/kenbellows/nfdash",
+  "devDependencies": {
+    "angular": "^1.4.5",
+    "angular-new-router": "^0.5.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.9.2",
+    "jshint-stylish": "^2.0.1"
+  }
+}
