@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Nerd Fitness Dashboard</title>
-  <link rel="stylesheet" href="/node_modules/bootstrap/dist/bootstrap.min.css" />
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="dashboard.css" />
 </head>
 <body ng-app="nfdash.main" ng-controller="mainController as nfmain">
     
-  <div class="container-fluid">
+  <div class="container-fluid" id="nfdash-wrapper">
     <div class="row">
       <!-- sidebar -->
       <div class="col-sm-4" id="nfdash-sidebar">
@@ -21,10 +22,15 @@
     </div>
   </div>
 
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
   <script src="/node_modules/angular/angular.js"></script>
   <script src="/node_modules/angular-new-router/dist/router.es5.js"></script>
   <script src="/node_modules/angular-ui-bootstrap/ui-bootstrap.min.js"></script>
-  <script src="debug/nerdfitness-dashboard.js"></script>
+  <script src="/node_modules/angular-momentjs/angular-momentjs.min.js"></script>
+  
+  <!--script src="/debug/nerdfitness-dashboard.js"></script-->
+  <script src="app.js"></script>
+  <script src="components/current/current.js"></script>
 
 </body>
 </html>

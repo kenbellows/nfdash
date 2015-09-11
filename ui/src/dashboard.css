@@ -1,0 +1,14 @@
+#nfdash-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+#nfdash-wrapper>.row,
+#nfdash-sidebar,
+#nf-dash-content {
+  height: 100%;
+}
+
+#nfdash-sidebar {
+  background: #ccc;
+}
