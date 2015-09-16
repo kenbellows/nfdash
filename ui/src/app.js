@@ -9,7 +9,11 @@ mainModule.config(['$momentProvider', function($moment) {
 
 function mainController($router) {
   $router.config([
-    {path: '/', component: 'current'}
+    {path: '/', component: 'current'},
+    {path: '/challenges', component: 'challenges'},
+    {path: '/challenge/:id', component: 'challenge'},
+    {path: '/trends', component: 'trends'},
+    {path: '/profile', component: 'profile'},
   ]);
 }
 mainModule.controller('mainController', ['$router', mainController]);

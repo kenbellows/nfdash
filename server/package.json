@@ -1,7 +1,7 @@
 {
-  "name": "nerdfitness-dashboard",
-  "version": "0.0.1-a",
-  "description": "A dashboard concept to keep track of NerdFitness challenge progress",
+  "name": "nerdfitness-dashboard-server",
+  "version": "0.0.1a",
+  "description": "The server component of a dashboard concept to keep track of NerdFitness challenge progress",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,11 +23,8 @@
     "jshint-stylish": "^2.0.1"
   },
   "dependencies": {
-    "angular": "^1.4.5",
-    "angular-momentjs": "^0.2.2",
-    "angular-new-router": "^0.5.3",
-    "angular-ui-bootstrap": "^0.13.4",
-    "bootstrap": "^3.3.5",
-    "angular-momentjs": "^0.2.2"
+    "express": "latest",
+    "request": "latest",
+    "cheerio": "latest"
   }
 }
